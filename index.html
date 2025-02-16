@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body class="d-flex justify-content-center align-items-center  bg-dark ">
+
+    <div class="container ">
+        <div class="row p-1" id="main">
+            <div class="col-lg-3 col-1 col-md-1 col-sm-1">
+
+            </div>
+            <div class="col-lg-6  border rounded-5 px-lg-5  py-5 bg-white">
+                <header>
+                    <div class="title text-center">
+                        <h1>Weather App <i class="ri-sun-fill text-warning"></i></h1>
+                    </div>
+                </header>
+                <div class="search-box mt-4">
+                    <input type="text" placeholder="Enter your location" id="input-box">
+    
+                    <button class="fa-solid ps-0 ms-0
+                    " id="searchBtn">🔍</button>
+                </div>
+        
+
+                <div class="not-found  my-4  justify-content-center align-items-center flex-column" id="not-found">
+                  
+                    <h1 class="my-5">Sorry Location Not Found!!!</h1>
+                    <img src="img/404.png" class="img-fluid " alt="">
+                  
+                </div>
+                <div class="weather-body  text-center">
+                    <img src="img/cloud.png" class="img-fluid weather-img" alt="">
+                    <div class="box mt-5">
+                        <h2 class="temperature fs-1 fw-bolder">0<sup class="fw-normal fs-3"><i class="ri-celsius-line"></i></sup></h2>
+                    <h3 class="description fs-3 fw-bolder text-capitalize">light rain</h3>
+                    </div>
+                    <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 gy-3 mt-5  ">
+                        <div class="col  ">
+                               <div class="humidity d-flex  justify-content-center   align-items-start ">
+                                <i class="ri-contrast-drop-fill display-4 me-3"></i>
+                                <div class="text d-flex flex-column justify-content-center align-items-start">
+                                    <span id="humidity" class="fs-4 fw-bolder">0%</span>
+                                    <p class="fs-4">Humidity</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <div class="wind  d-flex   justify-content-center align-items-start">
+                                <i class="ri-windy-fill display-4 me-3"></i>
+                                <div class="text d-flex flex-column justify-content-center align-items-start">
+                                    <span id="wind-speed" class="fs-4 fw-bolder">0Km/H</span>
+                                    <p class="fs-4">Wind Speed</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-1 col-md-1 col-sm-1">
+
+            </div>
+        </div>
+        
+    </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
